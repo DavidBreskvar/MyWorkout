@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/editbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="40dp"
+        android:text="@string/edit_string" />
+
+    <TextView
+        android:id="@+id/exerciseTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editbtn"
+        android:layout_alignBottom="@+id/editbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/numReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exerciseTxt"
+        android:layout_below="@+id/editbtn"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="invisible"
+        android:hint="Reps" >
+		
+    </EditText>
+
+    <EditText
+        android:id="@+id/numSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numReps"
+        android:layout_below="@+id/numReps"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="invisible"
+        android:hint="Sets" />
+
+    <TextView
+        android:id="@+id/repsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exerciseTxt"
+        android:layout_below="@+id/editbtn"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/setsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/repsTxt"
+        android:layout_below="@+id/repsTxt"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="invisible" />
+
+</RelativeLayout>
